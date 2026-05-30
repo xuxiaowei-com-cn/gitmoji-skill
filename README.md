@@ -1,25 +1,28 @@
 # Gitmoji Skill
 
-基于 [gitmoji](https://gitmoji.dev) 的 Git 提交消息格式化技能。
+[English](README.md) | [中文](README-zh.md)
 
-## 简介
+A Git commit message formatting skill based on [gitmoji](https://gitmoji.dev).
 
-本技能帮助规范 Git 提交消息格式，使用 gitmoji shortcode 作为提交标题前缀，让提交历史更加语义化和可视化。
+## Overview
 
-## 用法
+This skill helps standardize Git commit messages by using gitmoji shortcodes as commit title prefixes, making commit
+history more semantic and visual.
 
-提交 Git 时，从 [gitmoji.md](gitmoji.md) 的 Shortcode 列选择对应的前缀：
+## Usage
+
+When committing, choose the appropriate shortcode from the Shortcode column in [gitmoji.md](gitmoji.md):
 
 ```
-:shortcode: 提交说明
+:shortcode: commit message
 ```
 
-格式规则：
+Format rules:
 
-- Shortcode 作为行首时，前面不加空格
-- Shortcode 后必须跟一个空格，再接提交正文
+- No leading space before the shortcode at the start of a line
+- A single space is required after the shortcode, followed by the commit message
 
-## 示例
+## Examples
 
 ```bash
 git commit -m ":memo: add README"
@@ -27,9 +30,9 @@ git commit -m ":bug: fix login error"
 git commit -m ":sparkles: add user avatar feature"
 ```
 
-## 文件
+## Files
 
-| 文件                       | 说明                                  |
-|--------------------------|-------------------------------------|
-| [gitmoji.md](gitmoji.md) | Gitmoji 速查表（Emoji / Shortcode / 描述） |
-| [CLAUDE.md](CLAUDE.md)   | 技能定义文件                              |
+| File                     | Description                                          |
+|--------------------------|------------------------------------------------------|
+| [gitmoji.md](gitmoji.md) | Gitmoji reference (Emoji / Shortcode / English / 中文) |
+| [CLAUDE.md](CLAUDE.md)   | Skill definition file                                |
